@@ -13,7 +13,7 @@ function Card({ label, title, picture }) {
 
 Card.propTypes = {
     label: PropTypes.string,
-    title: PropTypes.string,
+    title: PropTypes.string.isRequired,
     picture: PropTypes.string,
 };
 
