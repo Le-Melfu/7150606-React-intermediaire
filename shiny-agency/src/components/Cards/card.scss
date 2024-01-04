@@ -1,0 +1,11 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15;
+    span {
+        margin: 10px 0;
+        font-family: Roboto;
+    }
+}

@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './card.scss';
 
 function Card({ label, title, picture }) {
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', padding: 15 }}>
+        <div className="card">
             <span>{label}</span>
             <img src={picture} alt="freelance" height={80} width={80} />
             <span>{title}</span>
