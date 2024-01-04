@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Home from '../src/pages/home/home.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/home.jsx';
+import Survey from './pages/survey.jsx';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
     <React.StrictMode>
-        <Home />
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/survey" element={<Survey />} />
+            </Routes>
+        </Router>
     </React.StrictMode>,
+    document.getElementById('root'),
 );
