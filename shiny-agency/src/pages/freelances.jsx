@@ -1,28 +1,24 @@
 import React from 'react';
-import DefaultPicture from '../assets/pp.jpg';
 import Card from '../components/Cards/card';
 
 const freelanceProfiles = [
     {
         name: 'Jane Doe',
         jobTitle: 'Devops',
-        picture: DefaultPicture,
     },
     {
         name: 'John Doe',
         jobTitle: 'Developpeur frontend',
-        picture: DefaultPicture,
     },
     {
         name: 'Jeanne Biche',
         jobTitle: 'Développeuse Fullstack',
-        picture: DefaultPicture,
     },
 ];
 
 function Freelances() {
     return (
-        <div>
+        <div className="freelances">
             <h1>Freelances 👩‍💻👨‍💻👩‍💻</h1>
             <div className="card-section">
                 {freelanceProfiles.map((profile, index) => (
@@ -33,6 +29,7 @@ function Freelances() {
                         title={profile.name}
                     />
                 ))}
+                <Card key="kevin42" label="Intégrateur" title="kevin" />
             </div>
         </div>
     );

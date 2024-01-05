@@ -132,12 +132,6 @@ table {
     align-items: center;
 }
 
-.card-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 30px;
-}
-
 header {
     width: 100%;
     display: flex;
@@ -158,5 +152,29 @@ nav {
     a {
         text-decoration: none;
         margin-right: 10px;
+    }
+}
+
+.freelances {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    h1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 30px;
+        font-weight: 600;
+        padding: 20px 0px;
+        background-color: lightblue;
+    }
+    .card-section {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 30px;
     }
 }
